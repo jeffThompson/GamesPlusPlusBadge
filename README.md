@@ -1,3 +1,5 @@
+![badge](https://raw.github.com/jeffThompson/GamesPlusPlusBadge/master/SmallBadge.png)
+
 Games++ Badge
 ==================
 
