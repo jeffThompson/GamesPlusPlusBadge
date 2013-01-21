@@ -1,0 +1,45 @@
+GAMES++ BADGE: BILL OF MATERIALS
+All parts from DigiKey, unless otherwise noted.
+
+- - -
+
+BASIC BADGE
+Description							Qty	$/ea	Part #
+
+ATtiny85 microcontroller			1	$1.29	ATTINY85-20PU-ND
+
+IC socket							1	$0.19	A100204-ND
+
+Pager motor							1	$3.80	P14793CT-ND
+
+Directional buttons					4	$0.17	CKN9074-ND
+
+2.2k SMD resistors (2010-size)		4	$0.10	P2.2KWCT-ND
+
+Coin cell holder (24.5mm)			1	$0.68	3009K-ND
+
+CR2450 battery						1	$1.13	P340-ND
+
+Pre-coated PCB*						1	$1.57	473-1017-ND
+
+* this is for a 6x9" PCB, which can make 9 badges - smaller sizes
+  are also available
+
+- - -
+
+FANCY BADGES/EXHIBITION VERSION
+The fancier badges also include a USB connection (power only - not for programming)/power
+switch or a barrel jack and wall wart, plus an LED indicator that can be separately
+controlled.
+
+Blue LED (0805-size)				1	$0.90	516-1445-1-ND		
+
+Mini USB (type B)					1	$1.89	A31727CT-ND
+Switch, DPDT						1	$0.58	EG4633CT-ND
+or
+Barrel jack (2.1 x 5.5mm plug)		1	$1.73	CP-037AHPJCT-ND
+5VDC/1A power supply				1	$5.95	TOL-08269 (from SparkFun - cheaper!)
+
+- - -
+
+www.jeffreythompson.org
