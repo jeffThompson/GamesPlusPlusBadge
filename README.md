@@ -3,7 +3,7 @@
 Games++ Badge
 ==================
 
-Electronic game badges created for Games++ (November 2013), created in collaboration with [Alex Myers](www.alexmyers.info)
+Electronic game badges created for [Games++](http://www.gamesplusplus.org) (November 2013), created in collaboration with [Alex Myers](www.alexmyers.info)
 
 For a video demo, see: http://vimeo.com/53818644
 
