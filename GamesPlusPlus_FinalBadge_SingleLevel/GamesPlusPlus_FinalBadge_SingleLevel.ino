@@ -29,22 +29,22 @@
 boolean fancy = true;
 
 // level stored as 2d array
-int whichLevel = 4;               // level to start at (1-5)
+int whichLevel = 1;               // level to start at (1-5)
 byte level[14][14] = {
-  {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-  {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-  {1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1},
-  {3, 3, 3, 1, 1, 1, 3, 3, 1, 1, 1, 3, 3, 3},
-  {3, 3, 1, 2, 2, 2, 3, 1, 2, 2, 2, 1, 3, 3},
-  {3, 1, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 1, 3},
-  {3, 1, 2, 1, 1, 1, 0, 4, 1, 1, 1, 2, 1, 3},
-  {3, 1, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 1, 3},
-  {3, 3, 1, 2, 2, 2, 1, 3, 2, 2, 2, 1, 3, 3},
-  {3, 3, 3, 1, 1, 1, 3, 3, 1, 1, 1, 3, 3, 3},
-  {1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1},
-  {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-  {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-  {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+  {3, 4, 3, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1},
+  {2, 3, 3, 3, 3, 1, 2, 2, 1, 2, 2, 1, 1, 2},
+  {2, 2, 3, 3, 3, 1, 2, 2, 1, 2, 1, 1, 1, 2},
+  {2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2},
+  {2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 1, 2, 2},
+  {3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1},
+  {1, 3, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 3},
+  {1, 3, 3, 3, 3, 3, 3, 2, 2, 1, 2, 2, 2, 3},
+  {1, 3, 3, 3, 1, 1, 1, 3, 2, 2, 3, 2, 2, 3},
+  {1, 3, 1, 1, 1, 1, 3, 3, 3, 2, 2, 2, 2, 2},
+  {3, 3, 1, 2, 2, 2, 3, 1, 1, 1, 1, 2, 2, 2},
+  {2, 2, 2, 1, 1, 2, 1, 3, 3, 3, 3, 2, 1, 1},
+  {2, 2, 2, 3, 3, 0, 3, 3, 1, 1, 2, 3, 2, 2},
+  {1, 1, 2, 3, 3, 2, 1, 1, 1, 2, 2, 2, 2, 1}
 };
 const int width = 14;             // width of the level
 const int height = 14;            // ditto height
@@ -59,14 +59,14 @@ const int led = 1;           // on "fancy badges" only
 char prevDir = ' ';          // store previous button state (prevents retriggering)
 
 // intro to be played as morse code at the start
-boolean morseIntro = true;      // disable to NOT play the intro
+boolean morseIntro = true;   // disable to NOT play the intro
 // "games plus plus"
-char intro[] = {
-  "--. .- -- . ... .--. .-.. ..- ... .--. .-.. ..- ..." };
+// char intro[] = {
+//   "--. .- -- . ... .--. .-.. ..- ... .--. .-.. ..- ..." };
   
 // "you have been blinded and thrown in a dungeon..."
-// char intro[] = { 
-//  "-.-- --- ..- .... .- ...- . -... . . -. -... .-.. .. -. -.. . -.. .- -. -.. - .... .-. --- .-- -. .. -. .- -.. ..- -. --. . --- -. .-.-.-" };
+char intro[] = { 
+"-.-- --- ..- .... .- ...- . -... . . -. -... .-.. .. -. -.. . -.. .- -. -.. - .... .-. --- .-- -. .. -. .- -.. ..- -. --. . --- -. .-.-.-" };
 
 
 void setup() {
@@ -76,7 +76,6 @@ void setup() {
   // uncomment for "fancy badges", otherwise may draw power needlessly
   if (fancy) {
     pinMode(led, OUTPUT);
-    digitalWrite(led, HIGH);
   }
 
   // get player coords based on level
